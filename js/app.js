@@ -27,5 +27,65 @@ checkPalindrome = (string) => {
 console.log(checkPalindrome("Radar"));
 
 
+// Write a function sumDigits that accepts a number and returns the sum of its digits.
+/* 
+sumDigits = (num) => {
+    
+    num = num.toString().split('');
+    console.log(typeof num);
+    console.log(num);
+    num = num[0] + num[1];
+    console.log(num);
+}
+
+console.log(sumDigits(42)); */
 
 
+// function sumDigits(n) {
+//     return (n - 1) % 9 + 1;
+//   }
+//   console.log(sumDigits(42));
+
+// var sumDigits = 42,
+//     sum = 0;
+
+// while (sumDigits) {
+//     sum += sumDigits % 10;
+//     sumDigits = Math.floor(sumDigits / 10);
+// }
+
+// console.log(sumDigits(42));
+
+// let value = 42,
+//     sum = 0;
+
+// while (value) {
+//     sum += value % 10;    // sum = sum +(value % 10);
+//     console.log(sum);
+//     console.log(value + 'S');
+//     value = Math.floor(value / 10);
+//     console.log(value + 'T')
+// }
+
+// console.log(sum);
+
+
+function sumDigits(num) {
+    let string = num.toString(); 
+    console.log(typeof string);
+    console.log(string);
+    let array = 0;
+    let sum = 0;
+    // console.log(typeof array);
+    // console.log(typeof sum);
+    
+    for (let i = array; i < string.length; i++) { 
+      // sum += Number(string[i]); 
+      sum += Number(string[i]); 
+    }
+    return sum;
+  }
+  
+  console.log(sumDigits(42)); 
+
+  
