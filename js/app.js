@@ -175,5 +175,37 @@ const printPrimes = (newNum) => {
   }
   
 }
+printPrimes(97);
 
-console.log(printPrimes(97));
+
+
+
+// Hungry for more?
+// Complete the afternoon lab.
+
+// Write a function insertDash that accepts a number as a parameter and returns a string with a dash inserted between any consecutive odd numbers. There should not be a dash at the end, it goes only between numbers.
+
+// console.log(insertDash(454793));
+
+// => 4547-9-3
+// Commit.
+// Write a function reverseString that takes a string as a parameter and returns that string with the letters reversed without using .split(), .reverse(), or .join().
+
+// Commit.
+
+// Make your palindrome function from problem two above work regardless of spacing (or capitalization). So, for example, "Sit on a potato pan Otis" or "Bird rib" would pass the test.
+
+// Commit.
+
+// Make your palindrome function work even if the string contains punctuation. So: "Sit on a potato pan, Otis!!!" or "A man, a plan, a canal: Panama." or "Cigar? Toss it in a can! It is so tragic." would pass the test.
+
+// Commit.
+
+// Make a "word palindrome" function that returns true if the words in a phrase are the same backwards and forwards. It should not care about spacing, capitalization, or punctuation. For example the following string would pass the test:
+
+// "Son, I am able," she said. "Though you scare me, watch!" said I, "Beloved," I said, "watch me scare you!" Though, said she: "able am I, son."
+
+// Commit.
+
+// You still want more?!?! Do you even sleep? Create an account on Project euler and keep working on those problems.
+
