@@ -109,14 +109,71 @@ function sumArray(array) {
   let sum = 0;
   for(let i = 0; i < array.length; i++){
     sum += array[i];
-    
   }
   return sum
 }
 
-
 console.log(sumArray([1, 2, 3, 4, 5, 6]));
 
+const sumArray = (array) => {
+  let sum = 0;
+  for(let i = 0; i < array.length; i++){
+    sum += array[i];
+  }
+  return sum
+}
+console.log(sumArray([1, 2, 3, 4, 5, 6])); 
 
-=> 21
+// A Prime number is a number that is not evenly divisible by another number except 1 and itself. If you want to read more deeply about it, go here. To test whether a number is Prime, you only need to test as far as the square root of that number. This is advisable for optimization and testing large numbers.
 
+// Step One
+// Write a function called checkPrime that will test whether a number is Prime. The function will return true (Boolean) if Prime, false if not. Hint: Check every number up to the square root. To do this, try a for loop.
+
+const checkPrime = (num) => {
+  // remove problem 1 and 2 so doesnt bog problem
+  if (num === 1){
+    return false;
+  } else if (num === 2){
+    return true;
+  } else { //must let i = 2 and we start from 2 above. if 0 the return will just stop loop
+    for (let i = 2; i < num; i++){
+      if (num % i === 0){
+        return false;
+      } 
+    }
+    return true;
+  }
+}
+
+console.log(checkPrime(3));
+console.log(checkPrime(5));
+console.log(checkPrime(97));
+console.log(checkPrime(100));
+
+
+
+
+
+// Step Two
+// Write another function called printPrimes that will print (console log) all the Primes up to an arbitrary limit. For example, if you invoke your function with printPrimes(97), it will print all the Prime numbers up to and including 97. This function can call on the previous checkPrime function.
+
+const printPrimes = (newNum) => {
+    
+  //dont get how to remove 0 from showing
+  for (let i = 1; i <= newNum; i++){
+      let notPrime = false;
+      for (let k = 2; k <= i; k++){
+          if (i % k === 0 && k !== i){
+              notPrime = true;
+          // return notPrime;
+          }
+      }
+      if (notPrime === false){
+        
+          console.log(`${i}`);
+      } 
+  }
+  
+}
+
+console.log(printPrimes(97));
